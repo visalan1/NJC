@@ -33,7 +33,7 @@ def search():
        return render_template("search.html", cursor = cursor)
        
 if __name__ == '__main__':
-    app.run(port = 5678, debug = True)
+    app.run(use_reloader = True, debug = True)
     
 
 #app.run(debug=True) #http://127.0.0.1:5000 default Python local host and port number
